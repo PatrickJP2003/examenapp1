@@ -1,8 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:nethub/main.dart';
-import 'package:nethub/screens/loginScreen.dart';
-import 'package:nethub/screens/registerScreen.dart';
+import 'package:nethub/screens/navegacion/listaCiudad.dart';
+
+import 'package:nethub/screens/gastronomiaScreen.dart';
+
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -13,25 +14,22 @@ class MyDrawer extends StatelessWidget {
       child: ListView(
         children: [
           // Item para la pantalla principal (bienvenida)
-          
-            ListTile(
+          ListTile(
             title: Text("Bienvenida"),
             onTap: () => Navigator.pushReplacement(
                 context, MaterialPageRoute(builder: (context) => WelcomeScreen())),
           ),
           // Item para la pantalla de login
           ListTile(
-            title: Text("Iniciar sesión"),
+            title: Text("Gastronomía"),
             onTap: () => Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (context) => LoginScreen())),
+                context, MaterialPageRoute(builder: (context) => GastronomyScreen())),
           ),
-          // Item para la pantalla de registro
           ListTile(
-            title: Text("Registrarse"),
+            title: Text("Ciudades"),
             onTap: () => Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (context) => RegisterScreen())),
+                context, MaterialPageRoute(builder: (context) => ListaCiudadesScreen())),
           ),
-  
         ],
       ),
     );

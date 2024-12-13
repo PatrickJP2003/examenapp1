@@ -9,8 +9,8 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nethub"
-    compileSdk = flutter.compileSdkVersion
+    namespace = ""
+    compileSdk = flucom.example.nethubtter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
